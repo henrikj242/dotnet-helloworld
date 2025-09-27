@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - w42-helloworld
+name: Build and deploy ASP.Net Core app to Azure Web App - bdsagroup11chirpremotedb
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_799F336C12A0421C81243AB36C5A6F3B }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_46A0988A903A4AFEB194B30D37077C2A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E9B22E66206A41289A878F2BA258EBEB }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CB9AFD0FB6A34042B302E6BEA0FBDDF4 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A5DF8D7F39E04A71934A30FF743EE6FE }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C41659C092304AA88D93A3F8ADD710E7 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'w42-helloworld'
+          app-name: 'bdsagroup11chirpremotedb'
           slot-name: 'Production'
           package: .
           
